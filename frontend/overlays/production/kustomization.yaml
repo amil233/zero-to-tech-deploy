@@ -4,4 +4,4 @@ resources:
   - ../../base
 images:
   - name: ghcr.io/amil233/zero_to_tech
-    newTag: sha-7dc23f9
+    newTag: sha-9062756
