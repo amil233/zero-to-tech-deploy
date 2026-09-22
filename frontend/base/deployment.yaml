@@ -16,19 +16,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: nginx:alpine
+        image: ghcr.io/amil233/zero_to_tech
         ports:
         - containerPort: 80
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: frontend
-  labels:
-    app: frontend
-spec:
-  selector:
-    app: frontend
-  ports:
-  - port: 80
-    targetPort: 80
