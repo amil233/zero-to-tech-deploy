@@ -5,4 +5,4 @@ resources:
 images:
 - name: ghcr.io/amil233/zero_to_tech
   newName: ghcr.io/amil233/zero_to_tech
-  newTag: sha-17d93c6
+  newTag: sha-f43e3b9
