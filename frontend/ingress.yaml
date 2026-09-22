@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: frontend
+spec:
+  ingressClassName: traefik
+  tls:
+  - hosts:
+    - app.web-data.de5.net
+    secretName: frontend-origin-tls
+  rules:
+  - host: app.web-data.de5.net
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: frontend
+            port:
+              number: 80
